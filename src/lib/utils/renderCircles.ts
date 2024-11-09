@@ -1,9 +1,16 @@
+import { SelectedCircle } from "@/app/modules/Playground/Playground";
+
 interface RenderCirclesProps {
   playgroundRef: React.RefObject<HTMLCanvasElement>;
   circles: Circle[];
+  selectedCircles: SelectedCircle[];
 }
 
-const renderCircles = ({ playgroundRef, circles }: RenderCirclesProps) => {
+const renderCircles = ({
+  playgroundRef,
+  circles,
+  selectedCircles,
+}: RenderCirclesProps) => {
   const canvas = playgroundRef.current;
 
   if (!canvas) {
@@ -32,7 +39,7 @@ const renderCircles = ({ playgroundRef, circles }: RenderCirclesProps) => {
 
     context.fill();
 
-    if (circle.isActive) {
+    if (selectedCircles.find((el) => el.id === circle.id)) {
       context.lineWidth = 5;
       context.strokeStyle = "black";
       context.stroke();

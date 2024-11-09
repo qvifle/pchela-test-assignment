@@ -7,23 +7,12 @@
   --primary-hover: #00a5e1;
   --background-dark: #ebebeb;
   --text: #fff;
+  --border: #939393;
 }
 
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  } */
-}
-
-body {
-  /* color: var(--foreground);
-  background: var(--background); */
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+kbd {
+  background-color: var(--text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
 }
