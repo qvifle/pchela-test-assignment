@@ -1,5 +1,5 @@
-import Home from "./modules/Home/Home";
+import Playground from "./modules/Playground/Playground";
 
 export default function Page() {
-  return <Home />;
+  return <Playground />;
 }

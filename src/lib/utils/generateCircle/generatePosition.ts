@@ -1,4 +1,4 @@
-import getRandomNumber from "./getRandomNumber";
+import getRandomNumber from "../getRandomNumber";
 
 interface GeneratePositionProps {
   diameter: number;

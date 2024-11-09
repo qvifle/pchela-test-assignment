@@ -1,0 +1,8 @@
+.rules {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
