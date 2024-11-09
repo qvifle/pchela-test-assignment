@@ -4,7 +4,13 @@
 
 ```bash
 npm i
+```
+
+```bash
 npm run dev
+// or
+npm run build
+npm run start
 ```
 
 После этого откройте [http://localhost:3000](http://localhost:3000) в браузере для просмотра результата.
