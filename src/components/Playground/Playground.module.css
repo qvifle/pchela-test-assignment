@@ -1,0 +1,43 @@
+.playground {
+  background-color: var(--text);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.067);
+  aspect-ratio: 16 /9;
+  border-radius: 16px;
+  height: 100%;
+}
+
+.canvas {
+  /* width: 100%; */
+  height: 100%;
+  /* max-width: 1200px; */
+  aspect-ratio: 16 /9;
+  /* border-radius: 16px; */
+}
+
+.button {
+  background-color: var(--primary);
+  padding: 12px 36px;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 700;
+  transition: background-color 0.1s linear, transform 0.1s ease-in;
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+}
+
+.button:active {
+  transform: scale(1.05);
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+}
